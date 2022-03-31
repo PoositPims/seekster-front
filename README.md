@@ -20,11 +20,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 You need to use these username and password in order to get token
 and send request to otehr API
 
-username | password
-
------- | -------- |
-
-"ping" | "123"
+| username | password |
+| -------- | -------- |
+| "ping"   | "123"    |
 
 <!-- ีusername: "ping"
 password: "123" -->
