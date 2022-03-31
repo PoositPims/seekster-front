@@ -6,8 +6,6 @@ import OrderedService from "../components/orderService/OrderedService";
 function OrdersPage() {
   const [orders, setOrders] = useState([]);
 
-  axios.defaults.headers.common["Authorization"] =
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ0YTRmZDliYzg2Yzk5Y2QxYWQyYTMiLCJpYXQiOjE2NDg3MDM5MDksImV4cCI6MTY0ODczOTkwOX0.FSX1sqd9ypZBKRzeWyPVeVG5jo-J-A7CB1JBdmjAP-8";
   const apiPath = "https://api-candidate-test.workforce-develop.com";
 
   useEffect(() => {
@@ -15,15 +13,9 @@ function OrdersPage() {
       try {
         const res = await axios.get(`${apiPath}/v1/orders`);
         console.log("res ==>", res.data[0]);
-        // console.log("res.data ==>", res.data);
         setOrders(res.data);
-        // console.log("orders", orders);
 
-        const eachOrder = res?.data?.map(
-          (item) => item.service
-          // console.log("item", item.service)
-        );
-        // console.log("eachOrder", eachOrder);
+        const eachOrder = res?.data?.map((item) => item.service);
       } catch (err) {
         console.dir(err);
       }
@@ -31,11 +23,7 @@ function OrdersPage() {
     fetchServices();
   }, []);
 
-  const eachOrder = orders?.map(
-    (item) => item.service
-    // console.log("item", item.service)
-  );
-  // console.log("eachOrder", eachOrder);
+  const eachOrder = orders?.map((item) => item.service);
 
   return (
     <div>

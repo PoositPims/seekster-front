@@ -1,7 +1,6 @@
 import axios from "axios";
 import { API_URL } from "./env";
-// import { getToken, removeToken } from "../services/localStorage";
-import { getToken, removeToken } from "../components/services/localStorage";
+import { getToken, removeToken } from ".././services/locaStorage";
 
 axios.defaults.baseURL = API_URL;
 
@@ -14,6 +13,8 @@ axios.interceptors.request.use(
   },
   (err) => Promise.reject(err)
 );
+
+// axios.defaults.headers.common["Authorization"] = "Bearer " + getToken;
 
 // interceptor ฝั่ง response
 axios.interceptors.response.use(

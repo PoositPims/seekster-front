@@ -43,8 +43,8 @@ function ServiceDetail() {
   // };
   // ..................
 
-  axios.defaults.headers.common["Authorization"] =
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ0YTRmZDliYzg2Yzk5Y2QxYWQyYTMiLCJpYXQiOjE2NDg3MDM5MDksImV4cCI6MTY0ODczOTkwOX0.FSX1sqd9ypZBKRzeWyPVeVG5jo-J-A7CB1JBdmjAP-8";
+  // axios.defaults.headers.common["Authorization"] =
+  //   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ0YTRmZDliYzg2Yzk5Y2QxYWQyYTMiLCJpYXQiOjE2NDg3NDE1NjMsImV4cCI6MTY0ODc3NzU2M30.jksETAzDPRAoBOVCUc0L5lKKJuJRREjjlSd31Mjo_Hs";
 
   const onAdd = async (services) => {
     try {

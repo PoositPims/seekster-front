@@ -6,13 +6,16 @@ import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import { ServicesContextProvider } from "./store/services-context";
+import { LoginContextProvider } from "./store/LoginContext";
 
 ReactDOM.render(
   // <React.StrictMode>
   <ServicesContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <LoginContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </LoginContextProvider>
   </ServicesContextProvider>,
   // </React.StrictMode>,
   document.getElementById("root")

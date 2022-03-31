@@ -18,7 +18,9 @@ function OrderCard({ item, _id, price, name, description, picture }) {
         </div>
       </div>
       <div className={classes.fontDate} style={{ display: "flex" }}>
+        <i className="bi bi-calendar3 text-primary me-2 " />
         <p style={{ marginRight: "20px" }}>21 March 2022</p>
+        <i className="bi bi-clock text-primary me-2" />
         <p>11:00</p>
       </div>
     </div>

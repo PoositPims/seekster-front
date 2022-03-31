@@ -6,7 +6,7 @@ import classes from "./ServiceList.module.css";
 
 function ServiceList() {
   const serviceCtx = useContext(ServicesContextProvider);
-  console.log("serviceCtx", serviceCtx.services.data);
+  // console.log("serviceCtx", serviceCtx.services.data);
   return (
     <section className="list">
       <h2 style={{ margin: "46px 724px 46px 90px" }}>งานบริการ</h2>
