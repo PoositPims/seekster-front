@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with get clone, install and start
 
 ## Available Scripts
 
@@ -23,9 +21,6 @@ and send request to otehr API
 | username | password |
 | -------- | -------- |
 | "ping"   | "123"    |
-
-<!-- ีusername: "ping"
-password: "123" -->
 
 <!--
 The page will reload when you make changes.\
