@@ -20,7 +20,7 @@ function App() {
           username: "ping",
           password: "123",
         });
-        console.log("res", res.data.accessToken);
+        // console.log("res", res.data.accessToken);
         setToken(res.data.accessToken);
       } catch (err) {
         console.dir(err);

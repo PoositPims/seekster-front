@@ -16,10 +16,10 @@ function ServiceDetail() {
   const serviceId = useParams();
   // console.log("serviceId", serviceId);
 
-  console.log("service----------", services);
+  // console.log("service----------", services);
 
   const location = useLocation();
-  // console.log("location", location);
+  console.log("location", location);
 
   useEffect((serviceId) => {
     const apiPath = "https://api-candidate-test.workforce-develop.com";
@@ -29,7 +29,7 @@ function ServiceDetail() {
         const res = await axios.get(
           `${apiPath}/v1/services/${location.state._id}`
         );
-        // console.log("res ==>", res.data);
+        // console.log("res ==>", res.data);s
         setServices(res.data);
       } catch (err) {
         console.dir(err);

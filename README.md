@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 You need to send these username and password in the body of API (signin)
 in order to get token
-and you will be able to send request to otehr API
+and you will be able to send request to other API
 
 | username | password |
 | -------- | -------- |
